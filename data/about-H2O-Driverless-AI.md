@@ -7,11 +7,12 @@
 - Resources
     - https://s3.amazonaws.com/artifacts.h2o.ai/releases/ai/h2o/dai/rel-1.4.2-9/docs/booklets/DriverlessAIBooklet.pdf
     - https://s3.amazonaws.com/artifacts.h2o.ai/releases/ai/h2o/dai/rel-1.4.2-9/docs/booklets/MLIBooklet.pdf
+    - [Recipes for Driverless AI](https://github.com/h2oai/driverlessai-recipes)
     - Videos
         - https://www.youtube.com/results?search_query=h2o+driverless
         - https://www.youtube.com/watch?v=yzAhjinmdzk
         - https://www.youtube.com/watch?v=axIqeaUhow0
-
+    - [H2O meetups](https://github.com/h2oai/h2o-meetups)
 ---
 
 - [ ] [AI/ML/DL Library / Package / Framework: applicable]
@@ -27,4 +28,5 @@
 - [x] **[Hyper parameter tuning: automatic]**
 - [x] **[Model saving: automatic]**
 
-Back to [Data preparation, cleaning, validation, model creation, training resources](README.md).
+Back to [Programs and Tools](./programs-and-tools.md#programs-and-tools). <br/>
+Back to [Data page](./README.md#data).

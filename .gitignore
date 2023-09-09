@@ -13,7 +13,6 @@ _pycache_/*
 __pycache__
 *~
 *.bak
-.DS_Store
 \#*#
 .#*
 
@@ -24,3 +23,9 @@ __pycache__
 /.project
 /.pydevproject
 .ipynb_checkpoints
+*shared/
+*.cache
+wandb/
+catboost_info/
+*.logs
+.DS_Store

@@ -1,3 +1,25 @@
+#!/bin/bash
+
+#
+# Copyright 2019 Mani Sarkar
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+
+set -e
+set -u
+set -o pipefail
+
 TARGET_REPO="neomatrix369/awesome-ai-ml-dl"
 
 if [[ -z ${GITHUB_TOKEN} ]]; then
@@ -5,7 +27,8 @@ if [[ -z ${GITHUB_TOKEN} ]]; then
   exit 0
 fi
 
-TAG_NAME="v0.1"
+RELEASE_VERSION="0.1"
+TAG_NAME="v${RELEASE_VERSION}"
 POST_DATA=$(printf '{
   "tag_name": "%s",
   "target_commitish": "master",
@@ -44,7 +67,8 @@ function uploadAsset() {
          "https://uploads.github.com/repos/${TARGET_REPO}/releases/${releaseId}/assets?name=${assetName}"
 }
 
-uploadAsset ${RELEASE_ID} ${1:-boston_housing_dataset.zip}
+UPLOAD_ARTIFACT=$1
+uploadAsset ${RELEASE_ID} ${UPLOAD_ARTIFACT}
 
 echo "Finished uploading to GitHub"
 echo ""
@@ -52,4 +76,4 @@ echo "Checkout curl output at ${CURL_OUTPUT}"
 echo ""
 echo "Use curl -O -L [github release url] to download this artifacts."
 echo "    for e.g."
-echo "        curl -O -L https://github.com/neomatrix369/awesome-ai-ml-dl/releases/download/v0.1/boston_housing_dataset.zip"
+echo "        curl -O -L https://github.com/neomatrix369/awesome-ai-ml-dl/releases/download/${TAG_NAME}/${UPLOAD_ARTIFACT}"

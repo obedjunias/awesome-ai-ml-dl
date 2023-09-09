@@ -1,4 +1,4 @@
-# Better NLP
+# Better NLP [![Better NLP](https://img.shields.io/docker/pulls/neomatrix369/better-nlp.svg)](https://hub.docker.com/r/neomatrix369/better-nlp) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 This is a wrapper program/library that encapsulates a couple of NLP libraries that are popular among the AI and ML communities.
 
@@ -9,7 +9,7 @@ The idea is to keep the API language as high-level as possible, so its easier to
 Libraries / frameworks covered:
 
 - SpaCy ([site](https://spacy.io/) | [docs](https://spacy.io/usage/))
-- Textacy ([github](https://github.com/chartbeat-labs/textacy) | [docs](https://chartbeat-labs.github.io/textacy/))
+- Textacy ([github](https://github.com/chartbeat-labs/textacy) | [docs]https://textacy.readthedocs.io)
 - nltk ([site](http://www.nltk.org/) | [docs](https://buildmedia.readthedocs.org/media/pdf/nltk/latest/nltk.pdf))
 
 Non-NLP related libraries / frameworks used:
@@ -60,6 +60,32 @@ You can open these notebooks directly into Google Colab:
 - [better_nlp_spacy_texacy_examples.ipynb](./notebooks/google-colab/better_nlp_spacy_texacy_examples.ipynb) 
 - [better_nlp_summarisers.ipynb](./notebooks/google-colab/better_nlp_summarisers.ipynb)
 
+#### Kaggle kernels
+
+- Better NLP: **[Notebook/Kernel](https://www.kaggle.com/neomatrix369/better-nlp-class-notebook)** | [Scripts](https://www.kaggle.com/neomatrix369/betternlpclass)
+
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-user-content/o/inbox%2F2620712%2F7f251565a07399d0367d0401f3b9e498%2FScreen%20Shot%202019-10-06%20at%2020.25.45.png?generation=1570390145278471&alt=media)
+
+- Better NLP Summarisers: **[Notebook/Kernel](https://www.kaggle.com/neomatrix369/better-nlp-summarisers-notebook)** | Scripts: [Summariser_Cosine_Class](https://www.kaggle.com/neomatrix369/summarisercosineclass) | [Summariser_TFIDF_Class](https://www.kaggle.com/neomatrix369/summarisertfidfclass) | [Summariser_TFIDF_VariationClass](https://www.kaggle.com/neomatrix369/summarisertfidfvariationclass) | [Summariser_PyTextRank_Class](https://www.kaggle.com/neomatrix369/summariser-pytextrank-class)
+
+![](https://www.googleapis.com/download/storage/v1/b/kaggle-user-content/o/inbox%2F2620712%2F7073603b0cf742ab00417ed7502bc2a4%2FScreen%20Shot%202019-10-06%20at%2020.28.09.png?generation=1570390178748534&alt=media)
+
+[Utility Script Competition! (September 23rd - Oct 7th): submission, discussion topic](https://www.kaggle.com/general/109651#642354)
+
+- NLP Profiler:
+**[Library](https://github.com/neomatrix369/nlp_profiler)** | [![Gitter](https://badges.gitter.im/nlp_profiler/community.svg)](https://gitter.im/nlp_profiler/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge) |[Notebook/Kernel](https://www.kaggle.com/neomatrix369/nlp-profiler-simple-dataset) | [Script](https://www.kaggle.com/neomatrix369/nlp-profiler-class) | [Other related links](https://www.kaggle.com/general/166954)
+
+<table>
+  <tr>
+    <td align="center">
+        <a href="https://youtu.be/sdPOyqMfK7M?t=2274"><img alt="Demo of the NLP Profiler library (Abhishek talks #6)" src=https://user-images.githubusercontent.com/1570917/88474968-8fb48980-cf23-11ea-944d-0a1069174ede.png></a> or you find the rest of the <a href=https://www.youtube.com/watch?v=sdPOyqMfK7M>talk here</a> or here for <a href="https://github.com/neomatrix369/awesome-ai-ml-dl/blob/master/presentations/awesome-ai-ml-dl/02-abhishektalks-2020/README.md">slides</a>
+    </td>
+    <td align="center">
+        <a href="https://youtu.be/wHIcQWeOugI?t=808"><img alt="Demo of the NLP Profiler library (NLP Zurich talk)" src=https://secure.meetupstatic.com/photos/event/5/7/3/highres_492541395.jpeg></a> or you find the rest of the <a href=https://www.youtube.com/watch?v=wHIcQWeOugI>talk here or here for <a href="https://github.com/neomatrix369/nlp_profiler/blob/master/presentations/01-nlp-zurich-2020/README.md">slides</a>
+    </td>
+  </tr>
+</table>
+
 ## Installation
 
 Setup an environment needed to be able to run these programs without having to worry about the dependencies they use.
@@ -95,3 +121,14 @@ See [Docker environment](./docs/Docker_environment.md)
 ## Example code
 
 See [Examples and results](./docs/Examples.md)
+
+# Contributing
+
+Contributions are very welcome, please share back with the wider community (and get credited for it)!
+
+Please have a look at the [CONTRIBUTING](../../CONTRIBUTING.md) guidelines, also have a read about our [licensing](./LICENSE.md) (and warranty) policy.
+
+---
+
+Back to [NLP page](../../natural-language-processing/README.md#natural-language-processing-nlp) </br>
+Back to [main page (table of contents)](../../README.md)
